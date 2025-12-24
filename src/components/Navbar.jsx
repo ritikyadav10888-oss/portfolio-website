@@ -22,8 +22,9 @@ const Navbar = () => {
             }}
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                <a href="#" style={{ fontSize: '1.8rem', fontWeight: '700', color: '#fff' }}>
-                    Ritik<span className="text-gradient">.</span>
+                <a href="#" style={{ fontSize: '1.8rem', fontWeight: '700', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <img src="/logo.png" alt="Ritik Yadav Logo" style={{ height: '40px', width: 'auto' }} />
+                    <span>Ritik<span className="text-gradient">.</span></span>
                 </a>
 
                 <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>

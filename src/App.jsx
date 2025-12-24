@@ -5,6 +5,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Goals from './components/Goals';
+import Blog from './components/Blog';
+
 import Footer from './components/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
 import CustomCursor from './components/CustomCursor';
@@ -22,6 +24,8 @@ function App() {
       <Skills />
       <Projects />
       <Goals />
+      <Blog />
+
       <Footer />
     </div>
   );

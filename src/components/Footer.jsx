@@ -87,6 +87,11 @@ const Footer = () => {
                     <p style={{ color: '#888', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
                         © {new Date().getFullYear()} Ritik Yadav. Crafted with passion in Mumbai.
                     </p>
+                    <div style={{ marginTop: '5px' }}>
+                        <a href="/sitemap.xml" style={{ color: '#444', fontSize: '0.75rem', textDecoration: 'none', transition: 'color 0.3s' }} onMouseOver={(e) => e.target.style.color = 'var(--primary-color)'} onMouseOut={(e) => e.target.style.color = '#444'}>
+                            SITEMAP
+                        </a>
+                    </div>
                 </div>
             </div>
 

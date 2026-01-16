@@ -1,33 +1,55 @@
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Goals from './components/Goals';
-import Blog from './components/Blog';
-
 import Footer from './components/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
 import CustomCursor from './components/CustomCursor';
+import Home from './pages/Home';
+import ProjectsPage from './pages/ProjectsPage';
+import BlogPage from './pages/BlogPage';
+import GoalsPage from './pages/GoalsPage';
+import ContactPage from './pages/ContactPage';
+import { useEffect } from 'react';
+
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
+function AnimatedRoutes() {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/goals" element={<GoalsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <CustomCursor />
-      <div className="grain-overlay"></div>
-      <AnimatedBackground />
-      <Navbar />
-      <Hero />
-      <About />
-      <Resume />
-      <Skills />
-      <Projects />
-      <Goals />
-      <Blog />
-
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <CustomCursor />
+        <ScrollToTop />
+        <div className="grain-overlay"></div>
+        <AnimatedBackground />
+        <Navbar />
+        <main style={{ minHeight: '80vh' }}>
+          <AnimatedRoutes />
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

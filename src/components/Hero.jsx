@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const name = "Ritik";
@@ -117,8 +118,8 @@ const Hero = () => {
                     transition={{ delay: 1.8, type: 'spring' }}
                     style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}
                 >
-                    <a href="#projects" className="btn btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }}>View Projects</a>
-                    <a href="#about" className="btn" style={{
+                    <Link to="/projects" className="btn btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }}>View Projects</Link>
+                    <Link to="/#about" className="btn" style={{
                         background: 'rgba(255,255,255,0.05)',
                         border: '1px solid rgba(255,255,255,0.1)',
                         color: '#fff',
@@ -127,7 +128,7 @@ const Hero = () => {
                         fontSize: '1.1rem'
                     }}>
                         About Me
-                    </a>
+                    </Link>
                 </motion.div>
 
                 {/* Scroll Indicator */}

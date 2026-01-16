@@ -3,20 +3,20 @@ import { motion } from 'framer-motion';
 const Skills = () => {
     const skillCategories = [
         {
-            title: "Frontend Development",
-            skills: ["React.js", "Bootstrap", "CDBReact", "Responsive UI/UX"]
+            title: "Frontend & Mobile",
+            skills: ["React.js", "React Native", "Bootstrap", "Responsive UI/UX"]
         },
         {
-            title: "Backend Development",
-            skills: ["Node.js", "Express.js", "JWT Auth", "Role-based Security"]
+            title: "Backend & Cloud",
+            skills: ["Node.js", "Express.js", "Firebase", "JWT Auth", "Role-based Security"]
         },
         {
             title: "Databases",
-            skills: ["MongoDB (NoSQL)", "Advanced SQL", "MySQL", "Oracle"]
+            skills: ["MongoDB (NoSQL)", "Firestore", "Advanced SQL", "MySQL"]
         },
         {
-            title: "Other Skills",
-            skills: ["System Design", "Payment Integration", "Technical Writing", "Rapid Prototyping"]
+            title: "DevOps & Tools",
+            skills: ["System Design", "Razorpay Integration", "Docker", "Technical Writing"]
         }
     ];
 

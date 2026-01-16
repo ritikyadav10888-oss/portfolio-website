@@ -9,6 +9,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import BlogPage from './pages/BlogPage';
 import GoalsPage from './pages/GoalsPage';
 import ContactPage from './pages/ContactPage';
+import NotFound from './pages/NotFound';
 import { useEffect } from 'react';
 
 // Scroll to top on route change
@@ -30,6 +31,7 @@ function AnimatedRoutes() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/goals" element={<GoalsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );

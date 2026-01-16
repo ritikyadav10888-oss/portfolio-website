@@ -2,6 +2,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Resume from '../components/Resume';
+import FAQ from '../components/FAQ';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <About />
             <Resume />
             <Skills />
+            <FAQ />
         </motion.div>
     );
 };

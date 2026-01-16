@@ -35,18 +35,19 @@ const Navbar = () => {
             }}
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                <Link to="/" style={{ fontSize: '1.8rem', fontWeight: '700', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 1002 }}>
+                <Link to="/" aria-label="Ritik Yadav Home" style={{ fontSize: '1.8rem', fontWeight: '700', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 1002 }}>
                     <img src="/logo.png" alt="Ritik Yadav Logo" style={{ height: '40px', width: 'auto' }} />
                     <span>Ritik<span className="text-gradient">.</span></span>
                 </Link>
 
                 {/* Desktop Menu */}
                 <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-                    <div id="search" style={{ width: '200px' }}></div>
+                    <div id="search" style={{ width: '200px' }} aria-label="Search site content"></div>
                     {navItems.map((item) => (
                         <Link
                             key={item.name}
                             to={item.path}
+                            aria-label={`Go to ${item.name}`}
                             style={{
                                 color: isActive(item.path) ? 'var(--primary-color)' : '#e0e0e0',
                                 fontWeight: '500',
@@ -58,7 +59,7 @@ const Navbar = () => {
                             {item.name}
                         </Link>
                     ))}
-                    <Link to="/contact" className="btn btn-primary" style={{
+                    <Link to="/contact" className="btn btn-primary" aria-label="Contact Ritik Yadav" style={{
                         padding: '0.5rem 1.5rem',
                         background: 'var(--primary-color)',
                         color: '#fff',
@@ -70,6 +71,7 @@ const Navbar = () => {
                 {/* Mobile Menu Toggle */}
                 <button
                     className="mobile-toggle"
+                    aria-label="Toggle mobile Menu"
                     onClick={() => setIsOpen(!isOpen)}
                     style={{ fontSize: '1.5rem', background: 'none', border: 'none', color: '#fff', cursor: 'pointer' }}
                 >
@@ -82,6 +84,7 @@ const Navbar = () => {
                         <Link
                             key={item.name}
                             to={item.path}
+                            aria-label={`Go to ${item.name} mobile`}
                             style={{
                                 color: isActive(item.path) ? 'var(--primary-color)' : '#fff',
                                 fontWeight: '700',
@@ -94,6 +97,7 @@ const Navbar = () => {
                     ))}
                     <Link
                         to="/contact"
+                        aria-label="Contact Me"
                         onClick={() => setIsOpen(false)}
                         style={{
                             padding: '1rem 3rem',

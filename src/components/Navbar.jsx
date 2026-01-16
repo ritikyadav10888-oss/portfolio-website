@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from './Logo';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                 <Link to="/" aria-label="Ritik Yadav Home" style={{ fontSize: '1.8rem', fontWeight: '700', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 1002 }}>
-                    <img src="/logo.png" alt="Ritik Yadav Logo" width="40" height="40" loading="eager" style={{ height: '40px', width: '40px' }} />
+                    <Logo width={40} height={40} />
                     <span>Ritik<span className="text-gradient">.</span></span>
                 </Link>
 

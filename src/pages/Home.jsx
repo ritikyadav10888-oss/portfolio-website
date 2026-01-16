@@ -2,7 +2,6 @@ import { Suspense, lazy, useEffect } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
-import FAQ from '../components/FAQ';
 import { motion } from 'framer-motion';
 
 const Resume = lazy(() => import('../components/Resume'));
@@ -24,7 +23,6 @@ const Home = () => {
                 <Resume />
             </Suspense>
             <Skills />
-            <FAQ />
         </motion.div>
     );
 };

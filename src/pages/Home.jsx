@@ -1,9 +1,11 @@
+import { Suspense, lazy } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
-import Resume from '../components/Resume';
 import FAQ from '../components/FAQ';
 import { motion } from 'framer-motion';
+
+const Resume = lazy(() => import('../components/Resume'));
 
 const Home = () => {
     return (
@@ -15,7 +17,9 @@ const Home = () => {
         >
             <Hero />
             <About />
-            <Resume />
+            <Suspense fallback={<div style={{ padding: '50px', textAlign: 'center' }}>Loading Experience...</div>}>
+                <Resume />
+            </Suspense>
             <Skills />
             <FAQ />
         </motion.div>

@@ -9,18 +9,18 @@ const Hero = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.5
+                staggerChildren: 0.05,
+                delayChildren: 0.2
             }
         }
     };
 
     const letterAnimation = {
-        hidden: { opacity: 0, y: 50 },
+        hidden: { opacity: 0, y: 30 }, // Reduced y offset for faster spring
         visible: {
             opacity: 1,
             y: 0,
-            transition: { type: "spring", damping: 12, stiffness: 200 }
+            transition: { type: "spring", damping: 15, stiffness: 250 }
         }
     };
 
@@ -85,7 +85,7 @@ const Hero = () => {
                 <motion.h2
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 1.2, duration: 0.8 }}
+                    transition={{ delay: 0.6, duration: 0.6 }}
                     style={{
                         fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
                         color: '#e0e0e0',
@@ -99,7 +99,7 @@ const Hero = () => {
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 1 }}
+                    transition={{ delay: 0.8, duration: 0.8 }}
                     style={{
                         fontSize: '1.1rem',
                         color: '#a0a0a0',
@@ -115,7 +115,7 @@ const Hero = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1.8, type: 'spring' }}
+                    transition={{ delay: 1, type: 'spring' }}
                     style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}
                 >
                     <Link to="/projects" className="btn btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }}>View Projects</Link>

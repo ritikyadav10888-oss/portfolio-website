@@ -101,6 +101,7 @@ ul {
   opacity: 0.4;
   border-radius: 50%;
   animation: float-blob 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .blob-1 {

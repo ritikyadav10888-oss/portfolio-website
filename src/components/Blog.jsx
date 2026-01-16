@@ -408,6 +408,75 @@ const Blog = () => {
                     <p>Sports systems involve Captains, Players, Coaches, and Teams. A flexible schema is required to handle Solo, Duo, and Full Team registrations without duplicating player data.</p>
                 </>
             )
+        },
+        {
+            id: 11,
+            title: "Dockerizing Your MERN Stack: A Performance Guide",
+            date: "January 20, 2025",
+            category: "DevOps",
+            summary: "Learn how to containerize your React, Node, and MongoDB applications for consistent environment deployment and easier scaling.",
+            content: (
+                <>
+                    <p>Docker has revolutionized the way we deploy software. By packaging code, runtime, and system tools into containers, we ensure it runs perfectly on any machine.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. Single Command Setup</h3>
+                    <p>With <code>docker-compose</code>, you can spin up your entire MERN stack including the DB with one line. This eliminates the 'it works on my machine' excuse.</p>
+                    <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', margin: '1rem 0', border: '1px solid #333' }}>
+                        <code>$ docker-compose up --build</code>
+                    </div>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. Resource Isolation</h3>
+                    <p>Containers allow you to limit CPU and RAM usage, ensuring that a memory leak in your Node.js app doesn't crash the entire server.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. Multi-Stage Builds</h3>
+                    <p>For your React frontend, use multi-stage builds to compile the assets and serve them with a lightweight Nginx container, reducing image size by up to 80%.</p>
+                </>
+            )
+        },
+        {
+            id: 12,
+            title: "The Future of PWAs: Beyond the Browser Tab",
+            date: "January 22, 2025",
+            category: "Modern Web",
+            summary: "Progressive Web Apps are bridging the gap between web and native. Discover native-like features like Push Notifications and Offline mode.",
+            content: (
+                <>
+                    <p>Progressive Web Apps (PWAs) are the next step in web evolution. They combine the reach of the web with the functionality of a mobile app.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. Offline First Architecture</h3>
+                    <p>Using Service Workers, your app can cache assets and data. If a user loses internet in a stadium, they can still view their local tournament schedule.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. Web Push Notifications</h3>
+                    <p>Keep your users engaged with real-time alerts. From goal updates to tournament announcements, PWAs can send notifications even when the browser is closed.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. The Manifest File</h3>
+                    <p>Properly configuring your <code>manifest.json</code> allows users to 'Install' your website to their home screen, giving it a standalone app window without the browser bar.</p>
+                </>
+            )
+        },
+        {
+            id: 13,
+            title: "Micro-Animations with Framer Motion: Improving UX",
+            date: "January 25, 2025",
+            category: "UX/UI Design",
+            summary: "Motion design isn't just for looks. Learn how subtle animations can guide users and improve conversion rates in your React apps.",
+            content: (
+                <>
+                    <p>Animation should be functional, not just decorative. Good motion design provides context and feedback to the user.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. The Power of Feedback</h3>
+                    <p>A button that subtly bounces when clicked or a form that shakes on error gives immediate, intuitive feedback to the user.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. Staggered Entrance</h3>
+                    <p>Instead of the whole page flashing at once, use staggered animations to reveal content. It makes the loading process feel faster and more premium.</p>
+                    <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', margin: '1rem 0', border: '1px solid #333' }}>
+                        <code>{`<motion.div transition={{ staggerChildren: 0.1 }}>...</motion.div>`}</code>
+                    </div>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. Exit Animations</h3>
+                    <p>Using <code>AnimatePresence</code>, you can ensure that modal windows and alerts fade out smoothly instead of disappearing instantly, maintaining the user's focus.</p>
+                </>
+            )
         }
     ];
 

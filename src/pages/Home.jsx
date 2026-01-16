@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
@@ -8,6 +8,9 @@ import { motion } from 'framer-motion';
 const Resume = lazy(() => import('../components/Resume'));
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Ritik Yadav | #1 Full Stack Developer & Sports Tech Architect Mumbai";
+    }, []);
     return (
         <motion.div
             initial={{ opacity: 0 }}

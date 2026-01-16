@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import Blog from '../components/Blog';
 import { motion } from 'framer-motion';
 
 const BlogPage = () => {
+    useEffect(() => {
+        document.title = "Technical Blog & Insights | Ritik Yadav";
+    }, []);
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

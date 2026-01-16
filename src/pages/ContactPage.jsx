@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import MagneticButton from '../components/MagneticButton';
 
 const ContactPage = () => {
+    useEffect(() => {
+        document.title = "Contact | Ritik Yadav - Full Stack Developer";
+    }, []);
     return (
         <motion.section
             initial={{ opacity: 0, y: 30 }}

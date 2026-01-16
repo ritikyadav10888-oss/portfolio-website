@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import Projects from '../components/Projects';
 import { motion } from 'framer-motion';
 
 const ProjectsPage = () => {
+    useEffect(() => {
+        document.title = "Featured Projects | Ritik Yadav Portfolio";
+    }, []);
     return (
         <motion.div
             initial={{ opacity: 0, x: 20 }}

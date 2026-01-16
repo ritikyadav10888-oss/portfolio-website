@@ -16,58 +16,74 @@
   <meta name="description"
     content="Official portfolio of Ritik Yadav, the leading Full Stack Developer in Mumbai. Specialized in MERN Stack, AI Sports Technology, Blockchain Security, and scalable enterprise architectures. Explore projects in Healthcare, FinTech, and Sports Management." />
   <meta name="keywords"
-    content="Ritik Yadav, Ritik Yadav Portfolio, Best Full Stack Developer Mumbai, Top Software Engineer Mumbai, MERN Stack Architect India, React.js Expert Mumbai, Node.js Senior Developer Mumbai, AI Sports Tech India, Blockchain Security Mumbai, Smart Contract Developer India, Freelance Full Stack Mumbai, Custom CRM Mumbai, Force Sports and Wears Tech, Mumbai Computer Science Alumni, QFEST 2025 Developer, High-Performance Web Apps, Cybersecurity Auditor Mumbai, Web3 Architect India" />
+    content="Ritik Yadav, Ritik Yadav Portfolio, Best Full Stack Developer Mumbai, Top Software Engineer Mumbai, MERN Stack Architect India, React.js Expert Mumbai, Node.js Senior Developer Mumbai, AI Sports Tech India, Blockchain Security Mumbai, Smart Contract Developer India, Freelance Full Stack Mumbai, Custom CRM Mumbai, Force Sports and Wears Tech, Mumbai Computer Science Alumni, QFEST 2025 Developer, High-Performance Web Apps, Cybersecurity Auditor Mumbai, Web3 Architect India, Vercel Portfolio, Next.js Expert, Portfolio Website 2026" />
   <meta name="author" content="Ritik Yadav" />
   <meta name="google-site-verification" content="-QVJLpiIeKqmaKVjjAKbOARe6GTB4MxZiuf3Pd-LBGg" />
-  <link rel="canonical" href="https://ritikyadav-fullstack.netlify.app/" />
+  <link rel="canonical" href="https://portfolio-website-theta-kohl-52.vercel.app/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-  <!-- Critical CSS for instant FCP -->
+  <!-- Critical CSS for instant FCP & CLS prevention -->
   <style>
     :root {
       --bg-color: #0a0a0a;
       --primary-color: #646cff;
       --text-color: #e0e0e0;
+      --text-secondary: #b0b0b0;
     }
 
     body {
       background: var(--bg-color);
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'Outfit', sans-serif;
+      color: var(--text-color);
     }
 
-    .App {
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
+    #root {
+      min-height: 100vh;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
+    .hero-skeleton {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
-      to {
-        opacity: 1;
-      }
+    .hero-skeleton h1 {
+      font-size: 5rem;
+      margin: 0;
+      color: #fff;
+      letter-spacing: -3px;
+    }
+
+    .hero-skeleton p {
+      color: var(--text-secondary);
+      max-width: 600px;
+      line-height: 1.8;
+      margin-top: 2rem;
     }
   </style>
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ritik Yadav | Portfolio" />
-  <meta property="og:url" content="https://ritikyadav-fullstack.netlify.app/" />
+  <meta property="og:url" content="https://portfolio-website-theta-kohl-52.vercel.app/" />
   <meta property="og:title" content="Ritik Yadav | Top Full Stack Developer & Sports Tech Expert" />
   <meta property="og:description"
     content="Top-tier Full Stack Development specializing in Sports Technology, Secure Backends, and Scalable User Experiences." />
-  <meta property="og:image" content="https://ritikyadav-fullstack.netlify.app/logo.png" />
+  <meta property="og:image" content="https://portfolio-website-theta-kohl-52.vercel.app/og-image.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://ritikyadav-fullstack.netlify.app/" />
+  <meta property="twitter:url" content="https://portfolio-website-theta-kohl-52.vercel.app/" />
   <meta property="twitter:title" content="Ritik Yadav | Top Full Stack Developer" />
   <meta property="twitter:description"
     content="Expertise in MERN, Blockchain, and Sports Tech. Building the future of digital sports management." />
-  <meta property="twitter:image" content="https://ritikyadav-fullstack.netlify.app/logo.png" />
+  <meta property="twitter:image" content="https://portfolio-website-theta-kohl-52.vercel.app/og-image.png" />
 
   <!-- Performance Optimizations -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,11 +143,11 @@
       "@graph": [
         {
           "@type": "Person",
-          "@id": "https://ritikyadav-fullstack.netlify.app/#person",
+          "@id": "https://portfolio-website-theta-kohl-52.vercel.app/#person",
           "name": "Ritik Yadav",
-          "url": "https://ritikyadav-fullstack.netlify.app/",
+          "url": "https://portfolio-website-theta-kohl-52.vercel.app/",
           "jobTitle": "Full Stack Developer",
-          "image": "https://ritikyadav-fullstack.netlify.app/logo.png",
+          "image": "https://portfolio-website-theta-kohl-52.vercel.app/logo.png",
           "description": "Mumbai-based Full Stack Developer specializing in MERN Stack, Sports Tech, Blockchain, and Cybersecurity.",
           "worksFor": {
             "@type": "Organization",
@@ -166,12 +182,12 @@
         },
         {
           "@type": "WebSite",
-          "@id": "https://ritikyadav-fullstack.netlify.app/#website",
-          "url": "https://ritikyadav-fullstack.netlify.app/",
+          "@id": "https://portfolio-website-theta-kohl-52.vercel.app/#website",
+          "url": "https://portfolio-website-theta-kohl-52.vercel.app/",
           "name": "Ritik Yadav Portfolio | Best Full Stack Developer Mumbai",
           "description": "Portfolio of Ritik Yadav, specializing in sports tech innovation and scalable full stack architectures.",
           "publisher": {
-            "@id": "https://ritikyadav-fullstack.netlify.app/#person"
+            "@id": "https://portfolio-website-theta-kohl-52.vercel.app/#person"
           },
           "inLanguage": "en-US"
         },
@@ -180,7 +196,7 @@
           "name": "Custom Software Development",
           "serviceType": "Full Stack Development",
           "provider": {
-            "@id": "https://ritikyadav-fullstack.netlify.app/#person"
+            "@id": "https://portfolio-website-theta-kohl-52.vercel.app/#person"
           },
           "areaServed": {
             "@type": "Country",
@@ -228,19 +244,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://ritikyadav-fullstack.netlify.app/"
+              "item": "https://portfolio-website-theta-kohl-52.vercel.app/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Projects",
-              "item": "https://ritikyadav-fullstack.netlify.app/#projects"
+              "item": "https://portfolio-website-theta-kohl-52.vercel.app/#projects"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Blog",
-              "item": "https://ritikyadav-fullstack.netlify.app/#blog"
+              "item": "https://portfolio-website-theta-kohl-52.vercel.app/#blog"
             }
           ]
         }

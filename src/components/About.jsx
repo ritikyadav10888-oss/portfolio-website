@@ -12,11 +12,11 @@ const About = () => {
                         style={{ flex: 1 }}
                     >
                         <h2 className="heading-lg">Character & Approach</h2>
-                        <p style={{ fontSize: '1.2rem', color: '#a0a0a0', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+                        <p style={{ fontSize: '1.2rem', color: '#b0b0b0', marginBottom: '1.5rem', lineHeight: '1.8' }}>
                             I am a proactive leader who thrives on technical challenges and collaboration.
                             My work is driven by a value for clarity, scalability, and adhering to best practices.
                         </p>
-                        <p style={{ fontSize: '1.1rem', color: '#a0a0a0', marginBottom: '2rem' }}>
+                        <p style={{ fontSize: '1.1rem', color: '#b0b0b0', marginBottom: '2rem' }}>
                             Whether it's bridging technical logic with user-friendly narratives or optimizing layouts for seamless UX,
                             I am energized by making projects both innovative and accessible. I'm an iterative learner, constantly digging deep into logic, edge cases, and dialect-specific syntax.
                         </p>

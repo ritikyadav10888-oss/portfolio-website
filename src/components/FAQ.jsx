@@ -43,7 +43,7 @@ const FAQ = () => {
                             style={{ marginBottom: '1.5rem', padding: '1.5rem' }}
                         >
                             <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '1rem' }}>{faq.question}</h3>
-                            <p style={{ color: '#aaa', lineHeight: '1.6' }}>{faq.answer}</p>
+                            <p style={{ color: '#b0b0b0', lineHeight: '1.6' }}>{faq.answer}</p>
                         </motion.div>
                     ))}
                 </div>

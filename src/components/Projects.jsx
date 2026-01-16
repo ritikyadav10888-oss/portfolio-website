@@ -45,7 +45,7 @@ const Projects = () => {
                                 In Development for QFEST 2025
                             </span>
                             <h3 className="heading-md" style={{ marginTop: '0.5rem', fontSize: '2.5rem' }}>Multi-Module Healthcare Assistant</h3>
-                            <p style={{ color: '#a0a0a0', marginBottom: '2rem', fontSize: '1.2rem', lineHeight: '1.6' }}>
+                            <p style={{ color: '#b0b0b0', marginBottom: '2rem', fontSize: '1.2rem', lineHeight: '1.6' }}>
                                 A comprehensive healthcare platform designed to bridge the gap between patients and medical services.
                                 Features a secure NoSQL backend with role-based authentication.
                             </p>
@@ -89,7 +89,7 @@ const Projects = () => {
                                 <h4 style={{ fontSize: '1.4rem', color: 'white', marginBottom: '0.5rem' }}>Supply Chain Market</h4>
                                 <p style={{ fontSize: '0.9rem', color: 'var(--primary-color)', fontWeight: '600' }}>Blockchain • Ethereum • Solidity</p>
                             </div>
-                            <p style={{ color: '#a0a0a0', fontSize: '1rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+                            <p style={{ color: '#b0b0b0', fontSize: '1rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
                                 A decentralized marketplace using Ethereum smart contracts. Integrated Web3.js with a React frontend
                                 for transparent transaction tracking and secure document storage.
                             </p>
@@ -108,7 +108,7 @@ const Projects = () => {
                                 <h4 style={{ fontSize: '1.4rem', color: 'white', marginBottom: '0.5rem' }}>Botnet Detection System</h4>
                                 <p style={{ fontSize: '0.9rem', color: 'var(--primary-color)', fontWeight: '600' }}>Python • Machine Learning</p>
                             </div>
-                            <p style={{ color: '#a0a0a0', fontSize: '1rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+                            <p style={{ color: '#b0b0b0', fontSize: '1rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
                                 An advanced security system using Scikit-learn to analyze network traffic and detect anomalies.
                                 Enhanced accuracy by integrating IP reputation analysis.
                             </p>

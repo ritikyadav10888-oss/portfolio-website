@@ -28,7 +28,7 @@ const Footer = () => {
                 </MagneticButton>
 
                 <p style={{
-                    color: '#a0a0a0',
+                    color: '#b0b0b0',
                     marginBottom: '4rem',
                     fontSize: '1.2rem',
                     maxWidth: '600px',

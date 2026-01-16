@@ -47,7 +47,7 @@ const BlogPost = ({ title, date, category, content, onClose }) => {
                 <h1 style={{ fontSize: '2.5rem', margin: '1rem 0', background: 'var(--gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                     {title}
                 </h1>
-                <p style={{ color: '#888', marginBottom: '2rem' }}>{date}</p>
+                <p style={{ color: '#b0b0b0', marginBottom: '2rem' }}>{date}</p>
 
                 <div className="blog-content" style={{ color: '#e0e0e0', lineHeight: '1.8' }}>
                     {content}
@@ -231,8 +231,8 @@ const Blog = () => {
                     <h4 style={{ color: '#var(--primary-color)', marginTop: '1rem' }}>Forensics: What the Logs Look Like</h4>
                     <p>Security teams often catch this by spotting "Impossible Travel"—a user logging in from two distant countries at the same time.</p>
                     <div style={{ background: '#000', padding: '1rem', borderRadius: '8px', border: '1px solid #333', fontFamily: 'monospace', fontSize: '0.85rem', overflowX: 'auto', margin: '1rem 0' }}>
-                        <span style={{ color: '#888' }}>[2024-05-20T14:02:01]</span> <span style={{ color: '#50fa7b' }}>User_Login_Success</span> | IP: 192.168.1.5 (USA)<br />
-                        <span style={{ color: '#888' }}>[2024-05-20T14:05:22]</span> <span style={{ color: '#ff5555' }}>User_Login_Success</span> | IP: 45.155.x.x (Russia) <span style={{ color: '#f1fa8c' }}>&lt;-- ALERT!</span>
+                        <span style={{ color: '#b0b0b0' }}>[2024-05-20T14:02:01]</span> <span style={{ color: '#50fa7b' }}>User_Login_Success</span> | IP: 192.168.1.5 (USA)<br />
+                        <span style={{ color: '#b0b0b0' }}>[2024-05-20T14:05:22]</span> <span style={{ color: '#ff5555' }}>User_Login_Success</span> | IP: 45.155.x.x (Russia) <span style={{ color: '#f1fa8c' }}>&lt;-- ALERT!</span>
                     </div>
                     <p><em>Defense:</em> Enforce MFA on all accounts and monitor for "impossible travel" logins.</p>
 
@@ -243,9 +243,9 @@ const Blog = () => {
                     <h4 style={{ color: '#var(--primary-color)', marginTop: '1rem' }}>The Attack Log (IIS Server)</h4>
                     <p>In the server logs, you would see a strange request to <code>human2.aspx</code> (the virus file) trying to talk to the database.</p>
                     <div style={{ background: '#000', padding: '1rem', borderRadius: '8px', border: '1px solid #333', fontFamily: 'monospace', fontSize: '0.85rem', overflowX: 'auto', margin: '1rem 0' }}>
-                        <span style={{ color: '#888' }}>POST /human2.aspx</span> <span style={{ color: '#f1fa8c' }}>X-siLock-Step1=</span>-1' OR 1=1; WAITFOR DELAY '0:0:5'-- <span style={{ color: '#ff5555' }}>500 0 0 15</span>
+                        <span style={{ color: '#b0b0b0' }}>POST /human2.aspx</span> <span style={{ color: '#f1fa8c' }}>X-siLock-Step1=</span>-1' OR 1=1; WAITFOR DELAY '0:0:5'-- <span style={{ color: '#ff5555' }}>500 0 0 15</span>
                     </div>
-                    <p style={{ fontSize: '0.9rem', color: '#aaa', marginTop: '0.5rem' }}><em>Translation:</em> The attacker is asking the database to "Wait for 5 seconds". If the page loads slowly, they know the hack worked.</p>
+                    <p style={{ fontSize: '0.9rem', color: '#b0b0b0', marginTop: '0.5rem' }}><em>Translation:</em> The attacker is asking the database to "Wait for 5 seconds". If the page loads slowly, they know the hack worked.</p>
 
                     <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. MGM Resorts vs. Scattered Spider</h3>
                     <p>In September 2023, Las Vegas went dark. Slot machines stopped working, and room keys failed. The attackers, a group of young native English speakers known as <strong>Scattered Spider</strong>, used arguably the most effective tool in history: the telephone.</p>
@@ -260,8 +260,8 @@ const Blog = () => {
                     <h4 style={{ color: '#var(--primary-color)', marginTop: '1rem' }}>The Okta System Log</h4>
                     <p>This is the exact moment the hackers won. The log shows an administrator manually resetting the security factors.</p>
                     <div style={{ background: '#000', padding: '1rem', borderRadius: '8px', border: '1px solid #333', fontFamily: 'monospace', fontSize: '0.85rem', overflowX: 'auto', margin: '1rem 0' }}>
-                        <span style={{ color: '#888' }}>[Admin_User]</span> action: <span style={{ color: '#ff5555' }}>user.mfa.factor.reset</span> target: <span style={{ color: '#50fa7b' }}>[Victim_Employee]</span><br />
-                        <span style={{ color: '#888' }}>[System]</span> Result: <span style={{ color: '#50fa7b' }}>SUCCESS</span>
+                        <span style={{ color: '#b0b0b0' }}>[Admin_User]</span> action: <span style={{ color: '#ff5555' }}>user.mfa.factor.reset</span> target: <span style={{ color: '#50fa7b' }}>[Victim_Employee]</span><br />
+                        <span style={{ color: '#b0b0b0' }}>[System]</span> Result: <span style={{ color: '#50fa7b' }}>SUCCESS</span>
                     </div>
 
                     <p style={{ marginTop: '1rem' }}><strong>The Fix:</strong> FIDO2 Hardware Keys (like YubiKeys). They are phishing-resistant because they require physical presence.</p>
@@ -296,10 +296,10 @@ const Blog = () => {
                     <p>Traditional firewalls use rules (IF port 80 suspicious THEN block). AI uses patterns. It learns what "normal" traffic looks like for <em>your</em> specific company and flags anything that deviates, even if it follows all the rules.</p>
 
                     <div style={{ background: '#000', padding: '1rem', borderRadius: '8px', border: '1px solid #333', fontFamily: 'monospace', fontSize: '0.85rem', overflowX: 'auto', margin: '1rem 0' }}>
-                        <span style={{ color: '#888' }}>// Concept: AI detecting a "Low & Slow" attack</span><br />
+                        <span style={{ color: '#b0b0b0' }}>// Concept: AI detecting a "Low & Slow" attack</span><br />
                         <span style={{ color: '#66d9ef' }}>model.predict</span>(<span style={{ color: '#e6db74' }}>traffic_pattern</span>) <br />
-                        <span style={{ color: '#888' }}>&gt;&gt; Result:</span> <span style={{ color: '#ff5555' }}>98% probability of data exfiltration (Slow Drip)</span><br />
-                        <span style={{ color: '#888' }}>&gt;&gt; Action:</span> <span style={{ color: '#50fa7b' }}>Isolating Host 10.0.0.45</span>
+                        <span style={{ color: '#b0b0b0' }}>&gt;&gt; Result:</span> <span style={{ color: '#ff5555' }}>98% probability of data exfiltration (Slow Drip)</span><br />
+                        <span style={{ color: '#b0b0b0' }}>&gt;&gt; Action:</span> <span style={{ color: '#50fa7b' }}>Isolating Host 10.0.0.45</span>
                     </div>
 
                     <h3 style={{ color: '#fff', marginTop: '2rem' }}>Adversarial Examples</h3>
@@ -499,7 +499,7 @@ const Blog = () => {
                     style={{ marginBottom: '4rem', textAlign: 'center' }}
                 >
                     <h2 className="section-title">Technical <span className="text-gradient">Insights</span></h2>
-                    <p style={{ color: '#888', maxWidth: '600px', margin: '0 auto 2rem auto' }}>
+                    <p style={{ color: '#b0b0b0', maxWidth: '600px', margin: '0 auto 2rem auto' }}>
                         Exploring the depths of code security, architecture, and innovation.
                     </p>
 
@@ -549,7 +549,7 @@ const Blog = () => {
                                 <h3 style={{ fontSize: '1.5rem', margin: '1rem 0', color: '#fff' }}>
                                     {post.title}
                                 </h3>
-                                <p style={{ color: '#aaa', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                <p style={{ color: '#b0b0b0', fontSize: '0.95rem', lineHeight: '1.6' }}>
                                     {post.summary}
                                 </p>
                             </div>

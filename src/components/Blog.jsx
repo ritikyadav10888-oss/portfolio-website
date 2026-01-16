@@ -309,6 +309,79 @@ const Blog = () => {
                     <p>The future isn't about perfect code; it's about resilience. Information security is becoming a game of "AI chess," and the grandmaster is whoever has the better training data.</p>
                 </>
             )
+        },
+        {
+            id: 7,
+            title: "The SportTech Revolution: IoT and Data in Action",
+            date: "January 05, 2025",
+            category: "Sports Tech",
+            summary: "How real-time biometrics and smart sensors are changing the game. A look into the tech stack behind modern athlete performance tracking.",
+            content: (
+                <>
+                    <p>Sports are no longer just about physical prowress; they are about data. From wearables to smart stadiums, technology is integrating into every second of the game.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. Wearable Biometrics</h3>
+                    <p>Athletes today wear sensors that track heart rate variability, oxygen saturation, and G-force impacts in real-time. This data travels via BLE (Bluetooth Low Energy) or 5G to a centralized dashboard.</p>
+                    <p><strong>The Stack:</strong> Usually involves ultra-low-latency databases like Redis for real-time visualization and InfluxDB for time-series analysis.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. Computer Vision in Officiating</h3>
+                    <p>Hawk-Eye technology and AI-assisted offside detection use high-speed cameras to triangulate ball and player positions with sub-millimeter accuracy.</p>
+                    <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', margin: '1rem 0', border: '1px solid #333' }}>
+                        <code style={{ color: '#50fa7b' }}>// Logic: 3D Mapping</code><br />
+                        <code>const isGoal = frameData.checkIntersection(goalLine, ballRadius);</code>
+                    </div>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. Fan Engagement</h3>
+                    <p>Augmented Reality (AR) in stadiums allows fans to point their phones at players to see real-time stats overlayed on the field. This is the future of sports media.</p>
+                </>
+            )
+        },
+        {
+            id: 8,
+            title: "React 19: The New Era of Web Development",
+            date: "January 14, 2025",
+            category: "Web Development",
+            summary: "React 19 is here. From Actions to the 'use' hook, learn how the new compiler and simplified APIs are making frontend code cleaner and faster.",
+            content: (
+                <>
+                    <p>React 19 marks one of the biggest shifts in the library's history. The goal? To make manual optimization a thing of the past.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. The React Compiler</h3>
+                    <p>You can finally say goodbye to <code>useMemo</code> and <code>useCallback</code>. The React Compiler automatically optimizes your components to re-render only when absolutely necessary.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. Actions API</h3>
+                    <p>Handling form submissions and pending states is now built into the core. Using <code>useActionState</code> (formerly <code>useFormState</code>), you can manage loading indicators and errors effortlessly.</p>
+                    <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', margin: '1rem 0', border: '1px solid #333' }}>
+                        <code>{`const [state, submitAction, isPending] = useActionState(fn, initialState);`}</code>
+                    </div>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. The 'use' Hook</h3>
+                    <p>A new API that allows you to read resources like Promises and Context directly during render. It simplifies fetching and state management significantly.</p>
+                </>
+            )
+        },
+        {
+            id: 9,
+            title: "Bridging the Gap: Web2 to Web3 Transition",
+            date: "January 16, 2025",
+            category: "Blockchain",
+            summary: "For full-stack developers, moving to Web3 can be daunting. Here is a roadmap to understanding Smart Contracts, Wallets, and the Decentralized Web.",
+            content: (
+                <>
+                    <p>The transition from a traditional centralized backend to a blockchain-based decentralized system is more about a change in mindset than just a change in syntax.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. Logic lives on the Chain</h3>
+                    <p>Instead of a Node.js server, your logic lives in **Smart Contracts** (usually written in Solidity). These are immutable—once deployed, you cannot "hot-fix" a bug.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. The Provider/Signer Pattern</h3>
+                    <p>In Web2, the server authenticates. In Web3, the user's wallet (e.g., MetaMask) signs every transaction. Your frontend uses libraries like <code>ethers.js</code> or <code>viem</code> to talk to the blockchain nodes.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. IPFS for Storage</h3>
+                    <p>Storing images or large JSONs on the blockchain is expensive. Instead, use IPFS (InterPlanetary File System) to store assets and keep only the CID (Content Identifier) on the chain.</p>
+
+                    <p style={{ marginTop: '2rem' }}><strong>Conclusion:</strong> Start by building a simple "CRUD" app on a Testnet (like Sepolia) to understand the gas costs and transaction lifecycle.</p>
+                </>
+            )
         }
     ];
 

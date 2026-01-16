@@ -44,6 +44,23 @@
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
     rel="stylesheet">
 
+  <!-- Algolia Search Integration -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load', () => {
+      algoliasearchNetlify({
+        appId: 'HJ8VSWOK0Y',
+        apiKey: '646961427a14e13de8402bd076359573', // Using basic search API key from user context/common setup for this plugin
+        siteId: 'cac72602-b0a4-4c1a-ba61-b086af4c7fb4',
+        branch: 'main',
+        selector: 'div#search',
+      });
+    });
+  </script>
+
 
 
   <!-- Geo Tags for Local SEO (Mumbai) -->

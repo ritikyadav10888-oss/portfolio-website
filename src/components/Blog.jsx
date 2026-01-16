@@ -382,6 +382,32 @@ const Blog = () => {
                     <p style={{ marginTop: '2rem' }}><strong>Conclusion:</strong> Start by building a simple "CRUD" app on a Testnet (like Sepolia) to understand the gas costs and transaction lifecycle.</p>
                 </>
             )
+        },
+        {
+            id: 10,
+            title: "Scaling Sports: Building Robust Tournament Registration Systems",
+            date: "January 16, 2025",
+            category: "Software Architecture",
+            summary: "Insights into architecting scalable registration systems for high-traffic sports events. Handling concurrent bookings, payment reliability, and data integrity.",
+            content: (
+                <>
+                    <p>Building a registration system for sporting events is more than just a CRUD app. It requires handling bursts of traffic, ensuring atomic payment transactions, and managing complex team hierarchies.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>1. The Ticketing Problem: Concurrency</h3>
+                    <p>When hundreds of teams try to register for a limited tournament spot at once, you face a 'Race Condition'. If not handled, you might oversell the tournament.</p>
+                    <p><strong>The Fix:</strong> Use database transactions or distributed locks (Redis) to ensure that a spot is held only for a user who is currently in the payment flow.</p>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>2. Reliable Payment Webhooks</h3>
+                    <p>Standard payment flows can fail if the user closes the browser before moving back to your site. You MUST implement webhooks to listen for 'payment.captured' events directly from the provider (like Razorpay or Stripe).</p>
+                    <div style={{ background: '#1a1a1a', padding: '1rem', borderRadius: '8px', margin: '1rem 0', border: '1px solid #333' }}>
+                        <code style={{ color: '#50fa7b' }}>// Logic: Webhook Verification</code><br />
+                        <code>const isValid = verifySignature(req.body, secret);</code>
+                    </div>
+
+                    <h3 style={{ color: '#fff', marginTop: '2rem' }}>3. Data Normalization for Teams</h3>
+                    <p>Sports systems involve Captains, Players, Coaches, and Teams. A flexible schema is required to handle Solo, Duo, and Full Team registrations without duplicating player data.</p>
+                </>
+            )
         }
     ];
 

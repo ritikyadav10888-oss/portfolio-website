@@ -43,7 +43,7 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-                    <div id="search" style={{ width: '200px' }} aria-label="Search site content"></div>
+                    <div id="search" role="search" style={{ width: '200px' }} aria-label="Search site content"></div>
                     {navItems.map((item) => (
                         <Link
                             key={item.name}

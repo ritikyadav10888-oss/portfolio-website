@@ -82,9 +82,9 @@ const Footer = () => {
                     gap: '10px'
                 }}>
                     <p style={{ color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1.1rem' }}>
-                        📞 9321058356 <span style={{ color: '#444' }}>|</span> 9326126507
+                        📞 9321058356 <span style={{ color: '#888' }}>|</span> 9326126507
                     </p>
-                    <p style={{ color: '#444', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                    <p style={{ color: '#888', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
                         © {new Date().getFullYear()} Ritik Yadav. Crafted with passion in Mumbai.
                     </p>
                 </div>

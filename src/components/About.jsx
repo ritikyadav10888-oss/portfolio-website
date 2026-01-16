@@ -32,24 +32,24 @@ const About = () => {
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'white' }}>Profile Breakdown</h3>
 
                             <div style={{ marginBottom: '1.5rem' }}>
-                                <span style={{ color: '#666', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Current Role</span>
+                                <span style={{ color: '#b0b0b0', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Current Role</span>
                                 <strong style={{ color: '#fff', fontSize: '1.1rem' }}>Individual Developer</strong>
                                 <p style={{ color: 'var(--primary-color)' }}>Force Sports and Wears India</p>
                             </div>
 
                             <div style={{ marginBottom: '1.5rem' }}>
-                                <span style={{ color: '#666', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Education</span>
+                                <span style={{ color: '#b0b0b0', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Education</span>
                                 <strong style={{ color: '#fff', fontSize: '1.1rem' }}>B.E. in Computer Science</strong>
                                 <p style={{ color: 'var(--primary-color)' }}>Mumbai University (2024) • CGPA: 7.5/10</p>
                             </div>
 
                             <div style={{ marginBottom: '1.5rem' }}>
-                                <span style={{ color: '#666', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Location</span>
+                                <span style={{ color: '#b0b0b0', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Location</span>
                                 <strong style={{ color: '#fff', fontSize: '1.1rem' }}>Borivali, Mumbai, India</strong>
                             </div>
 
                             <div>
-                                <span style={{ color: '#666', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Focus</span>
+                                <span style={{ color: '#b0b0b0', fontSize: '0.9rem', display: 'block', marginBottom: '4px' }}>Focus</span>
                                 <strong style={{ color: '#fff', fontSize: '1.1rem' }}>Full Stack Development & Sports Domain</strong>
                             </div>
                         </div>

@@ -20,6 +20,36 @@
   <link rel="canonical" href="https://ritikyadav-fullstack.netlify.app/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
+  <!-- Critical CSS for instant FCP -->
+  <style>
+    :root {
+      --bg-color: #0a0a0a;
+      --primary-color: #646cff;
+      --text-color: #e0e0e0;
+    }
+
+    body {
+      background: var(--bg-color);
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .App {
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ritik Yadav | Portfolio" />
@@ -45,7 +75,12 @@
 
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <!-- Algolia Search Integration - Deferred for Performance -->
   <link rel="preload"
@@ -71,7 +106,7 @@
             selector: 'div#search',
           });
         }
-      }, 2000); // Wait 2 seconds after load to initialize search (non-critical)
+      }, 5000); // 5 seconds delay for third-party scripts
     });
   </script>
 
